@@ -20,31 +20,34 @@ For this project, please think about how you would architect a scalable and secu
 install.sh is a bash script 
 Installs terraform, python, node.js, python-pip, wget, unzip and generates ssh
 use:
-
+```
 bash install.sh
-
+```
 to install all the dependencies
 
 # AWS ENVIRONMENT
 Set AWS environment variables using aws cli:
-
+```
 export AWS_ACCESS_KEY_ID=[AWS_ACCESS_KEY_ID]
 
 export AWS_SECRET_ACCESS_KEY=[AWS_SECRET_ACCESS_KEY]
+```
 
 # Web Server
 Once you've set environment variables, you can go into the directory web-servers and deploy infrastructure:
-
+```
 cd web-server
 
 terraform apply
+```
 
 # Tests
 Automated test using:
-
+```
 pytest --driver PhantomJS
-
+```
 # Destroy infrastructure:
 Destroy infrastructure with:
-
+```
 terraform destroy 
+```
